@@ -45,8 +45,8 @@ for (let i = 0; i < scores.length; i++) {
         console.log('C')
     } else if (scores[i].score <= 90) {
         console.log('B')
-    } else if (scores[i].score <= 100)
-    {console.log('A')
+    } else if (scores[i].score <= 100) {
+        console.log('A')
     }
 }
 
@@ -77,7 +77,7 @@ for (let i = 0; i < scores.length; i++) {
 
     } else if (scores[i].score <= 90) {
         scores[i].grade = 'B'
-    } else if (scores[i].score <= 100){
+    } else if (scores[i].score <= 100) {
         scores[i].grade = 'A'
 
     }
@@ -107,9 +107,9 @@ const NOVIEmployees = [
 //  ];
 // ==========================================
 
-for (let i = 0; i <NOVIEmployees.length; i++) {
+for (let i = 0; i < NOVIEmployees.length; i++) {
 
-NOVIEmployees[i]['email'] = ('' +NOVIEmployees[i].firstName+'.' +NOVIEmployees[i].lastName+'@novi.nl')
+    NOVIEmployees[i]['email'] = ('' + NOVIEmployees[i].firstName + '.' + NOVIEmployees[i].lastName + '@novi.nl')
 
 }
 console.log(NOVIEmployees)
@@ -118,9 +118,9 @@ console.log(NOVIEmployees)
 // Lukt het je om ervoor te zorgen dat alle e-mailadressen in lowercase letters komen te staan? Dit heb je nog niet geleerd, maar google is your best friend...
 // ==========================================
 
-for (let i = 0; i <NOVIEmployees.length; i++) {
+for (let i = 0; i < NOVIEmployees.length; i++) {
 
-    NOVIEmployees[i]['email'] = ('' +NOVIEmployees[i].firstName.toLowerCase()+'.' +NOVIEmployees[i].lastName.toLowerCase()+'@novi.nl')
+    NOVIEmployees[i]['email'] = ('' + NOVIEmployees[i].firstName.toLowerCase() + '.' + NOVIEmployees[i].lastName.toLowerCase() + '@novi.nl')
 
 }
 console.log(NOVIEmployees)
@@ -153,14 +153,39 @@ const students = [
     {name: 'Karima', city: 'Utrecht', zipCode: '3531', neighborhood: null},
 ];
 
-for (let i = 0; i <students.length; i++) {
-    switch(zipcode) {
-        case (students[i].zipCode):
+for (let i = 0; i < students.length; i++) {
+    switch (students[i].zipCode) {
+        case '3513':
             students[i].neighborhood = 'Pijlsweerd'
+            break;
+
+        case '3514':
+            students[i].neighborhood = 'Vogelenbuurt'
+            break;
+
+        case '3512':
+            students[i].neighborhood = 'Binnenstad'
+            break;
+
+        case '3531':
+            students[i].neighborhood = 'Lombok'
+            break;
+
+        case '3572':
+            students[i].neighborhood = 'Wittevrouwen'
+            break;
+
+        case '3581':
+            students[i].neighborhood = 'Oudwijk'
             break
+
+        case '3583':
+            students[i].neighborhood = 'Schildersbuurt'
+            break;
     }
 }
 
+console.log(students)
 
 // Verwachte uitkomsten:
 // [
