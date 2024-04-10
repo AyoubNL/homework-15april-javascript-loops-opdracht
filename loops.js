@@ -9,10 +9,11 @@
 //
 // Tip: je kunt de .repeat() methode gebruiken om een karakter een n aantal keer te herhalen...
 // Dit heb je nog niet geleerd, maar bekijk hiervoor dit MDN-artikel eens: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat
-// ==========================================
-
-//
-
+// ===============================
+// ===========
+for (let i = 1; i <= 5; i++) {
+    console.log('*'.repeat(i))
+}
 // ==========================================
 // Opdracht 2. Maak een for-loop die 4 keer het woord "loop..." logt, en bij de laatste (vijfde) loop het woord "klaar!"
 // Verwachte uitkomsten:
@@ -23,8 +24,12 @@
 // klaar!
 // ==========================================
 
-
-
+for (let i = 1; i < 4; i++) {
+    console.log('loop....')
+}
+for (let i = 5; i <= 5; i++) {
+    console.log('Klaar!')
+}
 
 
 // ==========================================
@@ -43,8 +48,15 @@
 // >> 9
 // ==========================================
 
-
-
+for (let i = 0; i <= 2; i++) {
+    console.log(i)
+}
+for (let i = 3; i <= 5; i++) {
+    console.log(`> ${i}`)
+}
+for (let i = 6; i <= 9; i++) {
+    console.log(`>> ${i}`)
+}
 
 
 // ==========================================
@@ -67,23 +79,18 @@
 // 13
 // 14
 // FizzBuzz
-// 16
-// 17
-// Fizz
-// 19
-// Buzz
-// Fizz
-// 22
-// 23
-// Fizz
-// Buzz
-// 26
-// Fizz
-// 28
-// 29
-// FizzBuzz
-// etc.
-// ==========================================
 
 
+for (let i = 1; i < 100; i++) {
 
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log('FizzBuzz')
+    }
+    else if (i % 3 === 0){
+        console.log('Fizz')}
+    else if (i % 5 === 0){
+        console.log('Buzz')
+    }
+    else {
+        console.log(i)}
+}
